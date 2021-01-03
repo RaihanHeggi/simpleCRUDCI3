@@ -35,40 +35,16 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> 
     
-    <div class= "container">
-    <div class="row">
-        <div class="col-10">
-            <h1 class="mt-3">Daftar Mahasiswa</h1>
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope='col'>No</th>
-                        <th scope='col'>Nama</th>
-                        <th scope='col'>NIM</th>
-                        <th scope='col'>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody >
-                    <tr>
-                    <tr><?php $no = 1; foreach($data_mahasiswa as $dm) : ?>
-                        <th scope="row"><?= $no; $no++; ?></th>
-                        <td><?= $dm['nama'] ?></td>
-                        <td><?= $dm['nim'] ?></td>
-                        <td>
-                            <a href="<?= site_url('edit/'.$dm['id']) ?>" class="badge badge-success">Edit</a>
-                            <a href="<?= site_url('halamanedit/delete/'.$dm['id']) ?>" class="badge badge-danger">Delete</a>
-                        </td>
-                    </tr><?php endforeach; ?>    
-                </tbody>
-            </table>
+    <div class="d-flex justify-content-center">
+        <div>
+            <?php foreach($data_video as $dv) : ?>
+            <?php echo $dv['data_video']; ?>
+            <?php endforeach; ?>
         </div>
-    </div>
-    </div>
-   
-    
+    </div> 
      <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script> 
-  </body>
+</body>
 </html>

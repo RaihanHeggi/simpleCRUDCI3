@@ -31,6 +31,7 @@
                 <a class="nav-link active" href="<?= site_url("halamanutama") ?>">Form <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="<?= site_url("halamanedit") ?>">Table</a>
                 <a class="nav-link" href="<?= site_url("halamandata") ?>">Data</a>
+                <a class="nav-link" href="<?= site_url("halamanVideo") ?>">Video</a>
                 </div>
             </div>
         </div>
